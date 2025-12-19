@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="logoEAN.png" alt="Logo de la universidad" class="logo">
+            <form action="home/index.html">
+                <input type="text" placeholder="Usuario" required id="user-input">
+                <input type="password" placeholder="Clave de acceso" required id="pass">
+                <select>
+                    <option value="es">ES - Español</option>
+                </select>
+                <button type="submit">Acceder al sistema</button>
+                <h4 id="error" style="display: none; color: red;">CREDENCIALES INCORRECTAS</h4>
+            </form>
+            <div class="message">
+                <p>Estimado Eanista, Pensando en la seguridad de tu información, Ten presente que a partir del 9 de septiembre de 2024 la clave para ingresar a SAP, cambio. Ve al siguiente enlace, conoce las condiciones de seguridad con los cuales debes fortalecer tu clave y realiza el cambio. También ten presente que el sistema SAP cada 60 días te va a solicitar el cambio de clave.</p>
+                <p>Puedes cambiar tu clave en <a href="https://cambioclave.universidadean.edu.co/sap.aspx">este enlace</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

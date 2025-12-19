@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Horario - DICIEMBRE 2025</title>
+    <link rel="stylesheet" href="miCalendario.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Encabezado superior con el botón de "Volver" y el Logo de la Universidad EAN -->
+    <header class="d-flex align-items-center p-3 header-container">
+        <!-- Botón de Volver junto con el Logo -->
+        <div class="d-flex align-items-center">
+            <a href="../index.html" class="btn btn-secondary back-btn">Volver</a>
+            <a href="../index.html">
+                <img src="https://radcolombia.org/web/sites/default/files/archivos/instituciones/universidad-ean/logo-ean.png" alt="Logo Universidad EAN" class="logo-ean ml-2">
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- Contenedor Principal -->
+    <div class="container calendario-container">
+        <h4 class="titulo">Mi Horario - DICIEMBRE 2025</h4>
+        
+        <!-- Días de la Semana -->
+        <div class="dias-semana">
+            <div>Lunes</div>
+            <div>Martes</div>
+            <div>Miércoles</div>
+            <div>Jueves</div>
+            <div>Viernes</div>
+            <div>Sábado</div>
+            <div>Domingo</div>
+        </div>
+        
+        <!-- Calendario -->
+        <div id="calendario" class="calendario"></div>
+    </div>
+
+    <!-- Sección del horario detallado -->
+    <div class="container horario-detallado">
+        <h4 class="titulo">Horario de Clases para DICIEMBRE 2025</h4>
+        <div id="detalle-horario"></div>
+    </div>
+
+    <script src="miCalendario.js"></script>
+</body>
+</html>

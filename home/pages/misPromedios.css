@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/FONDOeanz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logo-ean {
+    max-height: 30px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.main-container {
+    max-width: 100%;
+    width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header-section {
+    background-color: #cecf20;
+    padding: 15px;
+    border-radius: 8px;
+    color: #000;
+}
+
+.title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.program-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.program-code {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.export-button .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.export-button .btn-secondary:hover {
+    background-color: #5a6268;
+}

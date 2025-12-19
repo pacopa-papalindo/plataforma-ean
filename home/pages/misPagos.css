@@ -1,0 +1,291 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/FONDOeanz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logo-ean {
+    max-height: 30px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 100%;
+    width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Encabezado "Pagos Web" */
+.header {
+    background-color: #cecf20; /* Fondo verde */
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Barra de advertencia */
+.warning-bar {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 1.1em;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+}
+
+/* Información del usuario */
+.user-info {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Tipo de pago */
+.payment-type label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#payment-select {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Texto de información */
+.info-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la imagen en la sección info-text */
+.banner-img {
+    max-width: 100%;     /* Ajusta el ancho de la imagen al contenedor */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    display: block;      /* Asegura que la imagen se comporte como un bloque */
+    margin: 20px auto;   /* Centra la imagen y le da un margen arriba y abajo */
+}
+
+/* Tabla de pagos */
+.payment-table table {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.payment-table th,
+.payment-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.payment-table td {
+    background-color: #fff;
+}
+
+/* Botón de cancelar */
+.cancel-btn {
+    width: 100px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cancel-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 1200px) {
+    .main-container {
+        width: 85%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .user-name {
+        font-size: 1.3em;
+    }
+
+    .payment-type label {
+        font-size: 1em;
+    }
+
+    .info-text {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .warning-bar {
+        font-size: 0.95em;
+    }
+
+    .cancel-btn {
+        width: 100%;
+    }
+
+    .payment-table th, .payment-table td {
+        padding: 10px;
+    }
+
+    .info-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .warning-bar {
+        font-size: 0.9em;
+    }
+
+    .cancel-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .payment-type label,
+    #payment-select {
+        font-size: 1em;
+    }
+
+    .payment-table th, .payment-table td {
+        padding: 8px;
+        font-size: 0.95em;
+    }
+
+    .info-text {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .header {
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    .user-name {
+        font-size: 1.1em;
+    }
+
+    .cancel-btn {
+        padding: 12px;
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    .payment-table th, .payment-table td {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    .info-text {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Certificación</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="solicitudesAcademicas.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Encabezado superior -->
+    <header class="d-flex align-items-center p-3">
+        <div class="d-flex align-items-center">
+            <a href="../index.html" class="btn btn-secondary back-btn">Volver</a>
+            <!-- Hacer que la imagen también sea un enlace -->
+            <a href="../index.html">
+                <img src="https://radcolombia.org/web/sites/default/files/archivos/instituciones/universidad-ean/logo-ean.png" alt="Logo Universidad EAN" class="logo-ean ml-2">
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- Contenedor principal -->
+    <div class="container main-container">
+        <div class="header-section text-center p-3">
+            <h4 class="title">Solicitud de Certificación</h4>
+        </div>
+        
+        <!-- Paso 1: Datos Generales -->
+            <div id="step1" class="step">
+                <h5>Datos Generales</h5>
+                <p><strong>Fecha de Solicitud:</strong> 2025</p>
+                <p><strong>Nombres:</strong> ANDRES FELIPE</p>
+                <p><strong>Apellidos:</strong> LEON MORENO</p>
+                <p><strong>Correo Electrónico:</strong> aleonmo67650@universidadean.edu.co</p>
+                <p><strong>Documento:</strong> 1021667650</p>
+                <button class="btn btn-primary">Confirmar Datos</button>
+            </div>
+        
+        <!-- Paso 2: Programa Académico -->
+            <div id="step2" class="step2" style="display: none;">
+                <h5>Datos Académicos</h5>
+                <label for="programa">Programa académico:</label>
+                <select id="programa" class="form-control">
+                    <option value="">Selecciona el programa</option>
+                    <option value="LENGUAS MODERNAS">LENGUAS MODERNAS</option>
+                </select>
+                <label for="anio">Año académico:</label>
+                <select id="anio" class="form-control">
+                    <option value="">Selecciona el año</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    
+                </select>
+                <label for="periodo">Periodo:</label>
+                <select id="periodo" class="form-control">
+                    <option value="">Selecciona el periodo</option>
+                    <option value="001">001</option>
+                    <option value="002">002</option>
+                </select>
+                <button class="btn btn-primary mt-3">Siguiente</button>
+            </div>
+     
+        <!-- Paso 3: Tipo de Certificación -->
+        <div id="step3" class="step3" style="display: none;">
+            <h5>Tipo de Certificación</h5>
+            <label><input type="radio" name="certificacion" value="certificados" required> Certificados</label><br>
+            <label><input type="radio" name="certificacion" value="generales" required> Generales</label><br>
+            <button class="btn btn-primary mt-3">Siguiente</button>
+        </div>
+
+<!-- Paso 4: Solicitud de Peticiones Académicas -->
+<div id="step4" class="step4" style="display: none;">
+    <h5 id="certificationTitle">Solicitud de Peticiones Académicas</h5>
+    <label for="certificationSelect">Seleccione la petición académica que desea realizar:</label>
+    <select id="certificationSelect" class="form-control">
+        <option value="">Seleccione una opción...</option>
+        <option value="certificado_notas">Certificado de Notas</option>
+        <option value="certificado_estudio">Certificado de Estudios</option>
+        <option value="certificado_carrera">Certificado de Carrera</option>
+        <option value="certificado_egreso">Certificado de Egreso</option>
+        <option value="certificado_graduacion">Certificado de Graduación</option>
+        <option value="certificado_matricula">Certificado de Matrícula</option>
+        <option value="certificado_asistencia">Certificado de Asistencia</option>
+        <option value="certificado_solicitud">Certificado de Solicitud de Examen</option>
+        <option value="certificado_traslado">Certificado de Traslado Académico</option>
+        <option value="certificado_revalidacion">Certificado de Revalidación de Materias</option>
+        <option value="certificado_traduccion">Certificado de Traducción de Documentos Académicos</option>
+        <option value="certificado_practicas">Certificado de Prácticas Profesionales</option>
+        <option value="certificado_adeudo">Certificado de Adeudo de Materias</option>
+        <option value="certificado_titulacion">Certificado de Titulación</option>
+        <option value="certificado_examen">Certificado de Examen de Grado</option>
+    </select>
+    <button class="btn btn-success mt-3">Finalizar</button>
+</div>
+
+<!-- Confirmación -->
+<div id="confirmationMessage" style="display: none;" class="text-center">
+    <h4>¡Solicitud Completada!</h4>
+    <p>Tu solicitud ha sido enviada correctamente.</p>
+    <button class="btn btn-success" onclick="window.location.href='../index.html'">Volver a la Página Principal</button>
+</div>
+    
+
+    <script src="formularioCertificaciones.js"></script>
+</body>
+</html>

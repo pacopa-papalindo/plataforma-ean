@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../../imgs/FONDOeanz.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: #cecf20;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.back-button {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.status {
+    color: orange;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.inscritos {
+    color: #e76f51;
+}
+
+/* Secciones */
+.info, .calificaciones, .teorica-practica, .detalles {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.progress-bar{
+    background-color: green;
+    height: 10px;
+    width: 100%;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #8fa88c;
+    color: #fff;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+.table-mobile{
+    display: none;
+}
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .table-pc{
+        display: none;
+    }
+    .progress-bar{
+        display: none;
+    }
+    .table-mobile {
+        display: table;
+        width: 100%;
+    }
+    
+    .table-mobile td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table-mobile tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Opcional: Añade un fondo para diferenciar el tipo de calificación */
+    .table-mobile td:first-child {
+        font-weight: bold;
+        color: #555;
+    }
+}

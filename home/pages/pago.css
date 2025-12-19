@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/FONDOeanz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Botón de regreso */
+.back-btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 1em;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #cecf20;
+    color: #fff;
+    border-color: #cecf20;
+}
+
+.logo-ean {
+    max-height: 40px;
+    margin-left: 10px;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    background-color: #cecf20;
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.balance-button {
+    background-color: #eaeaea;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.balance-button:hover {
+    background-color: #cecf20;
+    color: #fff;
+    border-color: #cecf20;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Para mejorar en pantallas pequeñas */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Para redondear bordes en encabezados */
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.table th {
+    background-color: #cecf20;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    color: #555;
+}
+
+/* Estilo para datos importantes */
+.table td.important {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para celdas sin datos */
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+    background-color: #fafafa;
+}
+
+/* Program title */
+.program-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Transiciones */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

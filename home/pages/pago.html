@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pago.css">
+    <title>Estado de Cuenta</title>
+</head>
+<body>
+    <header>
+        <div class="back-logo-container">
+            <button class="back-btn" onclick="window.location.href='../index.html'">Atrás</button>
+            <!-- Hacer que la imagen funcione como un enlace -->
+            <a href="../index.html">
+                <img src="../imgs/sapCompanyLogo.png" alt="Logo SAP" class="logo-ean">
+            </a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <div class="header-section">
+            <h2 class="title">ESTADO DE CUENTA</h2>
+        </div>
+        <div class="sidebar">
+            <button class="balance-button" onclick="showContent('saldo')">Saldo a la fecha</button>
+            <button class="balance-button" onclick="showContent('academico')">Conceptos Académicos</button>
+            <button class="balance-button" onclick="showContent('no_academico')">Conceptos No Académicos</button>
+            <button class="balance-button" onclick="showContent('financiacion')">Financiación</button>
+            <button class="balance-button" onclick="showContent('subvenciones')">Subvenciones</button>
+            <button class="balance-button" onclick="showContent('pagos')">Pagos</button>
+        </div>
+        <div class="table-container">
+            <h2 class="program-title" id="section-title">Conceptos Académicos</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Número de documento</th>
+                        <th>Fecha</th>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td colspan="5" class="no-data">No hay conceptos disponibles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="pago.js"></script>
+</body>
+</html>

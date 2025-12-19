@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;  /* Tipografía original */
+    background: url('../imgs/FONDOeanz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado superior con logo y botón "Volver" */
+.header-top {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: #333;
+    font-size: 1em;
+    padding: 12px 18px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logo-ean {
+    max-height: 40px;
+    margin-left: 20px;
+    display: block;
+}
+
+/* Header de detalles personales */
+header {
+    text-align: center;
+    background-color: #cecf20;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .user-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #cecf20;
+    color: #333;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #b3b500;
+    transform: translateY(-2px);
+}
+
+nav button:focus {
+    outline: none;
+}
+
+/* Sección principal */
+section {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilos de los párrafos dentro de las secciones */
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    nav button {
+        font-size: 1em;
+        padding: 10px 14px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+}

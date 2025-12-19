@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="misPagos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Encabezado superior con el botón de "Volver" y el Logo de la Universidad EAN -->
+    <header class="d-flex align-items-center p-3">
+        <!-- Botón de Volver junto con el Logo -->
+        <div class="d-flex align-items-center">
+            <a href="../index.html" class="btn btn-secondary back-btn">Volver</a>
+            <!-- Convertir la imagen en un enlace -->
+            <a href="../index.html">
+                <img src="https://radcolombia.org/web/sites/default/files/archivos/instituciones/universidad-ean/logo-ean.png" alt="Logo Universidad EAN" class="logo-ean ml-2">
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- Contenedor principal con el contenido de la página -->
+    <div class="container-fluid main-container">
+        <div class="row header">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <span class="fas fa-building logo"></span>
+                <h4 class="ml-2">Pagos Web</h4>
+            </div>
+        </div>
+
+        <div class="row warning-bar">
+            <div class="col-12 text-center">
+                <p><strong>Importante:</strong> Para realizar su pago en línea, las ventanas emergentes del navegador deben estar habilitadas. Se recomienda el uso de navegadores como Google Chrome o Mozilla Firefox en las versiones más recientes para una experiencia óptima.</p>
+                <p><strong>Importante:</strong> Puede que su recibo no se haya generado aún en esta página. Si es así, tiene que esperar de 24 a 48 horas o revisar su correo electrónico para recibir su recibo.</p>
+            </div>
+        </div>
+
+        <div class="row user-info mt-3">
+            <div class="col-12">
+                <p class="user-name font-weight-bold">ANDRES FELIPE LEON MORENO</p>
+                <p class="user-id">Cédula de Ciudadanía: 1021667650</p>
+            </div>
+        </div>
+        
+        <div class="row payment-type mb-3">
+            <div class="col-12">
+                <label for="payment-select" class="font-weight-bold">Tipo de pago</label>
+                <select id="payment-select" class="form-control">
+                    <option value="inscripcion">ADMISION</option>
+                    <option value="otros">Otros</option>
+                    <option value="grado">Derechos de grado</option>
+                    <option value="matricula">Matrícula Académica</option>
+                    <option value="otros-academicos">Otros pagos académicos</option>
+                    <option value="extension">Pago Inscripción de Extensión</option>
+                    <option value="garantias">Depósito de garantías</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row info-text mb-4">
+            <div class="col-12 text-center">
+                <p><strong>Selecciona el tipo de pago</strong></p>
+                <img src="../imgs/bannerean.png" alt="Descripción de la imagen" class="img-fluid banner-img">
+            </div>
+        </div>
+
+        <div class="row payment-table mb-5">
+            <div class="col-12">
+                <table class="table table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Pronto Pago</th>
+                            <th>Pago Ordinario</th>
+                            <th>Pago Extraordinario</th>
+                            <th>Pago Extemporáneo</th>
+                            <th>Valor a Pagar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="6">Por favor seleccione un tipo de pago</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Botón Cancelar, que redirige a la página index.html -->
+        <a href="../index.html">
+            <button class="btn btn-danger cancel-btn">Cancelar</button>
+        </a>
+    </div>
+</body>
+</html>

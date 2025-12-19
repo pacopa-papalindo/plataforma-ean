@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("imgs/universidaddddddddd.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    border-bottom: 2px solid yellowgreen;
+}
+header h6{
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 1em;
+    padding-left: 1em;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    
+    .back img{
+        width: 20px;
+        margin-right: 1em;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        select{
+            background-color: transparent;
+            padding: 1em;
+            border: 0;
+        }
+        img{max-width: 105px;}
+    }
+    .opts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        img{max-width: 30px; cursor: pointer;}
+        img:nth-child(1):hover{
+            background-color: rgba(128, 128, 128, 0.274);
+        }
+        img:nth-child(2){
+            background-color: rgb(30, 128, 255);
+            border-radius: 50%;
+            padding: 0.3em;
+        }
+    }
+}
+main{
+    min-height: 100vh;
+    padding: 1em;
+    .card-container{
+        display: flex;
+        gap: 5px;
+        margin: 0.5em 0;
+        flex-wrap: wrap;
+        max-width: 1200px;
+
+        a{text-decoration: none; color: black;}
+        .card{
+            background-color: white;
+            color: rgb(44, 44, 44);
+            padding: 1em;
+            width: 11rem;
+            height: 11rem;
+            border: 1px solid gray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .icon{display: flex; align-items: center; gap: 5px;}
+            h4,h5,h2{
+                font-weight: 100;
+            }
+        }
+    }
+}
+.container{
+    background-color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        form input, form button{
+            padding: 5px;
+        }
+        button{
+            background-color: #cecf20;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:active{
+                background-color: green;
+            }
+        }
+    }
+}
+#datepicker{
+    margin: 0 auto;
+    width: 100%;
+}

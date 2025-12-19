@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../imgs/FONDOeanz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logo-ean {
+    max-height: 30px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.main-container {
+    max-width: 100%;
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    background-color: #cecf20;
+    padding: 15px;
+    border-radius: 8px;
+    color: #000;
+}
+
+h4, h5 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+
