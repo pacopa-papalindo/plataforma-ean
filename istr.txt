@@ -1,0 +1,15 @@
+en 'home/pages/misResultados/' estan las materias con su respectiva carpeta:
+1. Frances II
+2. Semiotica
+3. Turismo y traduccion
+4. portugues av
+
+en cada una crear un index.html con la misma estructura de las otras materias, teniendo en cuenta lo siguente:
+- Solo debe existir en estas nuevas el Corte 1.
+- Cada una debe estar en el año 2026 semestre 1
+
+Las notas para las materias son:
+1. Frances II: 78.45 (ya está hecho, tomalo como referencia para los otros)
+2. Semiotica: 80.23
+3. Turismo y traduccion: 77.45
+4. portugues av: 69.67
